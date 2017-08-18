@@ -1,10 +1,13 @@
 const express = require('express')
 const fs = require('fs')
+const cors = require('cors')
 const _ = require('lodash')
 
 const app = express()
 
 const data = JSON.parse(fs.readFileSync('./data.json'))
+
+app.use(cors())
 
 app.get('/', function (req, res) {
   res.send('Hello')
