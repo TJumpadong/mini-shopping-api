@@ -4,7 +4,7 @@
   "description": "E-commerce api project with express.js",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "tjumpadong",
@@ -12,6 +12,7 @@
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.15.3",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "nodemon": "^1.11.0"
   }
 }

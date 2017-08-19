@@ -24,6 +24,12 @@ app.get('/products/:productId', function (req, res) {
   res.send(result)
 })
 
+app.get('/sellers/:sellerId', function (req, res) {
+  const sellerId = req.params ? req.params.sellerId : ''
+  const result = _.find(data.sellers, seller => seller._id === sellerId)
+  res.send(result)
+})
+
 app.listen(3000, function () {
   console.log('Mini-Shopping API listening on port 3000!')
 })
